@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "./_components/Navigation";
+import { Toaster } from "sonner";
 
 export default function MainLayout({ children }) {
   return (
@@ -7,6 +8,7 @@ export default function MainLayout({ children }) {
       <Navigation />
       <main className="flex-1 h-full overflow-y-auto">
         {/* <SearchCommand /> */}
+        <Toaster position="bottom-center" />
         {children}
       </main>
     </div>
